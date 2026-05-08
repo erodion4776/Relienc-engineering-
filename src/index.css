@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-corporate-navy: #051937;
+  --color-regal-gold: #a67c00;
+  --color-light-bg: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800 bg-slate-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+    background-color: white;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
+
+.shadow-page {
+  box-shadow: 0 10px 40px -10px rgba(5, 25, 55, 0.2);
+}

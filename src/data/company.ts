@@ -7,6 +7,6 @@ export const companyDetails = {
     registered: "No. 48, Osayogie Street, Benin, Edo State, Nigeria.",
     operations: "No. 22, Old Yaba Road, Yaba, Lagos State, Nigeria."
   },
-  email: "alwaysetuk@gmail.com",
+  email: "reliablesystems1@gmail.com",
   phone: "08067318062"
 };

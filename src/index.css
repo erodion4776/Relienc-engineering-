@@ -19,10 +19,14 @@
 }
 
 @media print {
-  body {
-    background-color: white !important;
+  * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    background-color: white !important;
   }
   
   .no-print {
@@ -35,7 +39,6 @@
     margin: 0;
     page-break-after: always;
     page-break-inside: avoid;
-    background-color: white;
     box-shadow: none;
     padding: 0;
   }
